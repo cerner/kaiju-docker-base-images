@@ -9,7 +9,7 @@ jobs:
   include:
     - stage: build
       script:
-        - "travis_wait docker build -t cerner/kaiju-ruby-node -f ./kaiju-ruby-node/Dockerfile ./kaiju-ruby-node/"
-        - "travis_wait docker build -t cerner/kaiju-ruby-node-redis-traefik -f ./kaiju-ruby-node-redis-traefik/Dockerfile ./kaiju-ruby-node-redis-traefik/"
+        - travis_wait docker build -t cerner/kaiju-ruby-node -f ./kaiju-ruby-node/Dockerfile ./kaiju-ruby-node/
+        - travis_wait docker build -t cerner/kaiju-ruby-node-redis-traefik -f ./kaiju-ruby-node-redis-traefik/Dockerfile ./kaiju-ruby-node-redis-traefik/
 stages:
   - build
