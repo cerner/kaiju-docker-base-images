@@ -1,10 +1,10 @@
 language: generic
-sudo: required 
-services: 
+sudo: required
+services:
   - docker
 branches:
   only:
-    - master
+    - main
 jobs:
   include:
     - stage: build
